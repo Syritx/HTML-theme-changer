@@ -1,0 +1,54 @@
+/* variables */
+
+#dark {
+    /* when the body id is dark */
+    --backgroundColor: rgb(6, 10, 17);
+}
+
+#light {
+    /* when the body id is light */
+    --backgroundColor: rgb(255, 255, 255);
+}
+
+/* regual css */
+
+body {
+    margin: 0px;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+
+    /* using the --backgroundColor variable */
+    background-color: var(--backgroundColor);
+    transition: background-color .5s ease-in-out;
+}
+
+.theme-button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+}
+
+.text-center {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#light-setting {
+    background-color: rgb(47, 65, 136);
+    color: white;
+}#light-setting:hover {
+    background-color: rgb(32, 44, 94);
+    cursor: pointer;
+}
+
+#dark-setting {
+    background-color: rgb(47, 65, 136);
+    color: white;
+}#dark-setting:hover {
+    background-color: rgb(32, 44, 94);
+    cursor: pointer;
+}
